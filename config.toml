@@ -1,0 +1,43 @@
+baseURL = 'http://cobug.org/'
+languageCode = 'en-us'
+title = 'CoBUG'
+
+[[menus.links]]
+name = "Home"
+url = ""
+weight = 1
+
+[[menus.links]]
+name = "Slides"
+url = "/slides"
+weight = 2
+
+[[menus.links]]
+name = "Membership"
+url = "/membership"
+weight = 3
+
+[[menus.links]]
+name = "Contact"
+url = "/contact"
+weight = 4
+
+[[menus.links]]
+name = "Contact"
+url = "/contact"
+weight = 4
+
+[[menus.bsds]]
+name = "OpenBSD"
+url = "https://openbsd.org"
+weight = 1
+
+[[menus.bsds]]
+name = "NetBSD"
+url = "https://netbsd.org"
+weight = 2
+
+[[menus.bsds]]
+name = "FreeBSD"
+url = "https://freebsd.org"
+weight = 3

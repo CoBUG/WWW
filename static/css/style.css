@@ -1,0 +1,72 @@
+body {
+    font-family: "Lucida Grande", "Segoe UI", Tahoma, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 32px;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.box {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 2fr;
+}
+
+.box .top-row {
+  grid-row: 1 / 2;
+  grid-column-end:  span 2;
+}
+
+.box .first-col {
+  grid-column: 1 / 2;
+}
+
+.box .second-col {
+  grid-column: 2 / 2;
+}
+
+table {
+  border-collapse: separate;
+  border: 1px solid black;
+}
+
+table th {
+  background-color: #ccc;
+}
+
+table td {
+  padding: 5px;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f1f1f1;
+}
+
+nav {
+  width: 200px;
+}
+
+.logo {
+	height: 120px;
+	padding-left:20px;
+}
+
+.co {
+	background-color: #002868;
+	color: white;
+	text-align: center;
+	border-radius: 5px;
+	margin-bottom: 1px;
+}
+
+.heading {
+	font-weight: bold;
+	font-size: 3em;
+	padding-left: 50px;
+}
+
+footer {
+	width: 100%;
+	text-align: center;
+}
