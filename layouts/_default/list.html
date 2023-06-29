@@ -1,6 +1,6 @@
 {{ partial "header.html" . }}
 
-<div class="second-col">
+<main>
 {{ .Content }}
   <ul>
     {{ $pages := .Pages }}
@@ -12,6 +12,6 @@
     </li>
     {{ end }}
   </ul>
-</div>
+</main>
 
 {{ partial "footer.html" . }}

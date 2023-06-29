@@ -27,6 +27,11 @@ name = "Contact"
 url = "/contact"
 weight = 4
 
+[[menus.links]]
+name = "Mailing List"
+url = "/mailinglist"
+weight = 5
+
 [[menus.bsds]]
 name = "OpenBSD"
 url = "https://openbsd.org"
@@ -38,6 +43,21 @@ url = "https://netbsd.org"
 weight = 2
 
 [[menus.bsds]]
+name = "HardenedBSD"
+url = "https://hardenedbsd.org/"
+weight = 3
+
+[[menus.bsds]]
 name = "FreeBSD"
 url = "https://freebsd.org"
-weight = 3
+weight = 4
+
+[[menus.friends]]
+name = "ChiBUG"
+url = "https://chibug.org"
+weight = 1
+
+[[menus.friends]]
+name = "NYC*BUG"
+url = "https://nycbug.org"
+weight = 2

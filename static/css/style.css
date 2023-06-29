@@ -1,29 +1,69 @@
-body {
-    font-family: "Lucida Grande", "Segoe UI", Tahoma, Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    line-height: 32px;
-    padding-left: 20%;
-    padding-right: 20%;
+body, ul {
+  margin: 0;
+  padding: 30px;
+  font-family: "Lucida Grande", "Segoe UI", Tahoma, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 32px;
 }
 
-.box {
+.heading {
+  font-weight: bold;
+  font-size: 3em;
+  padding-left: 50px;
+}
+
+.logo {
+  height: 120px;
+  padding-left:20px;
+}
+
+.container {
   display: grid;
-  gap: 5px;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: 1fr 2fr;
+  grid-template-columns: 10% 90%;
 }
 
-.box .top-row {
-  grid-row: 1 / 2;
-  grid-column-end:  span 2;
+.co {
+  background-color: #002868;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 1px;
 }
 
-.box .first-col {
-  grid-column: 1 / 2;
+nav {
+  padding-right: 10px;
+  border-right: 1px solid #002868;
 }
 
-.box .second-col {
-  grid-column: 2 / 2;
+nav ul {
+  list-style-type: none;
+  padding: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+
+main {
+  padding: 10px;
+  margin-left: 20px;
+}
+
+header {
+  border-bottom: 1px solid #002868;
+}
+
+footer {
+  border-top: 1px solid #002868;
+}
+
+header, footer {
+  padding: 10px;
+  grid-column: 1 / span 2;
+}
+
+header h1, footer p {
+  margin: 0;
 }
 
 table {
@@ -32,7 +72,10 @@ table {
 }
 
 table th {
-  background-color: #ccc;
+  background-color: #002868;
+  color: white;
+  border-radius: 5px;
+  margin-bottom: 1px;
 }
 
 table td {
@@ -41,32 +84,4 @@ table td {
 
 tbody tr:nth-child(even) {
   background-color: #f1f1f1;
-}
-
-nav {
-  width: 200px;
-}
-
-.logo {
-	height: 120px;
-	padding-left:20px;
-}
-
-.co {
-	background-color: #002868;
-	color: white;
-	text-align: center;
-	border-radius: 5px;
-	margin-bottom: 1px;
-}
-
-.heading {
-	font-weight: bold;
-	font-size: 3em;
-	padding-left: 50px;
-}
-
-footer {
-	width: 100%;
-	text-align: center;
 }

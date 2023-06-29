@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
   <head>
     <meta charset="utf-8">
@@ -27,5 +27,47 @@
           <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
         {{ end }}
         </ul>
+
+        <h2 class="co">Friends</h2>
+        <ul class="menu">
+        {{ range .Site.Menus.friends }}
+          <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+        {{ end }}
+        </ul>
       </nav>
      </div>
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{ .Title }} | {{ .Site.Title }}</title>
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+  <header>
+    <img src="/images/cobug.png" class="logo" />
+    <span class="heading">Colorado BSD Users Group</span>
+  </header>
+
+  <div class="container">
+    <nav>
+      <h2 class="co">Links</h2>
+      <ul class="menu">
+      {{ range .Site.Menus.links }}
+        <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+      {{ end }}
+      </ul>
+
+      <h2 class="co">*BSD</h2>
+      <ul class="menu">
+      {{ range .Site.Menus.bsds }}
+        <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+      {{ end }}
+      </ul>
+
+      <h2 class="co">Friends</h2>
+      <ul class="menu">
+      {{ range .Site.Menus.friends }}
+        <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+      {{ end }}
+    </nav>
